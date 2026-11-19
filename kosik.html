@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Košík | MojShop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo">MojShop</a>
+    <form class="search" action="katalog.html" role="search">
+      <input type="search" name="q" placeholder="Hľadať produkty…" aria-label="Hľadať">
+      <button class="btn" type="submit">Hľadať</button>
+    </form>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.querySelectorAll('.nav-links,.main-nav').forEach(e=>e.classList.toggle('open'))">☰</button>
+    <nav class="nav-links">
+      <div class="lang"><select aria-label="Jazyk"><option>SK</option><option>EN</option></select></div>
+      <a href="prihlasenie.html">Prihlásiť</a>
+      <a href="ucet.html">Účet</a>
+      <a href="kosik.html">Košík (0)</a>
+    </nav>
+  </div>
+  <nav class="main-nav"><div class="container"><ul>
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="katalog.html">Všetky produkty</a></li>
+    <li><a href="katalog.html?kat=1">Kategória 1</a></li>
+    <li><a href="katalog.html?kat=2">Kategória 2</a></li>
+    <li><a href="katalog.html?kat=3">Kategória 3</a></li>
+  </ul></div></nav>
+</header>
+<main><div class="container">
+<h1>Košík</h1>
+<div class="cart-layout">
+  <div class="table-wrap"><table>
+    <thead><tr><th>Produkt</th><th>Cena</th><th>Množstvo</th><th>Spolu</th><th></th></tr></thead>
+    <tbody>
+      <tr><td>Názov produktu</td><td>0,00 €</td><td><input class="qty" type="number" value="1" min="1"></td><td>0,00 €</td><td><a href="#">Odstrániť</a></td></tr>
+    </tbody>
+  </table></div>
+  <aside class="summary">
+    <h2>Objednávka</h2>
+    <strong>Doprava</strong>
+    <label class="option"><input type="radio" name="d" checked> Kuriér – 0,00 €</label>
+    <label class="option"><input type="radio" name="d"> Osobný odber – 0,00 €</label>
+    <strong>Platba</strong>
+    <label class="option"><input type="radio" name="p" checked> Kartou online</label>
+    <label class="option"><input type="radio" name="p"> Dobierka</label>
+    <label class="option"><input type="radio" name="p"> Bankový prevod</label>
+    <div class="row"><span>Tovar</span><span>0,00 €</span></div>
+    <div class="row"><span>Doprava</span><span>0,00 €</span></div>
+    <div class="row total"><span>Spolu</span><span>0,00 €</span></div>
+    <a class="btn" href="#">Objednať</a>
+  </aside>
+</div>
+</div></main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div><h3>MojShop</h3><p>Krátky popis obchodu.</p></div>
+    <div><h3>Nákup</h3><ul><li><a href="katalog.html">Produkty</a></li><li><a href="kosik.html">Košík</a></li></ul></div>
+    <div><h3>Zákazník</h3><ul><li><a href="prihlasenie.html">Prihlásenie</a></li><li><a href="registracia.html">Registrácia</a></li><li><a href="ucet.html">Môj účet</a></li></ul></div>
+    <div><h3>Kontakt</h3><p>info@mojshop.sk<br>+421 000 000 000</p></div>
+  </div>
+  <p class="copy">© 2026 MojShop</p>
+</div></footer>
+<script src="script.js" defer></script>
+</body></html>

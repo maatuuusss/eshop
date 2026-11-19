@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domov | MojShop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo">MojShop</a>
+    <form class="search" action="katalog.html" role="search">
+      <input type="search" name="q" placeholder="Hľadať produkty…" aria-label="Hľadať">
+      <button class="btn" type="submit">Hľadať</button>
+    </form>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.querySelectorAll('.nav-links,.main-nav').forEach(e=>e.classList.toggle('open'))">☰</button>
+    <nav class="nav-links">
+      <div class="lang"><select aria-label="Jazyk"><option>SK</option><option>EN</option></select></div>
+      <a href="prihlasenie.html">Prihlásiť</a>
+      <a href="ucet.html">Účet</a>
+      <a href="kosik.html">Košík (0)</a>
+    </nav>
+  </div>
+  <nav class="main-nav"><div class="container"><ul>
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="katalog.html">Všetky produkty</a></li>
+    <li><a href="katalog.html?kat=1">Kategória 1</a></li>
+    <li><a href="katalog.html?kat=2">Kategória 2</a></li>
+    <li><a href="katalog.html?kat=3">Kategória 3</a></li>
+  </ul></div></nav>
+</header>
+<main><div class="container">
+<section class="hero">
+  <div class="hero-text">
+    <h1>Všetko, čo hľadáte, <span>na jednom mieste</span></h1>
+    <p>Krátky text o vašom obchode a ponuke. Rýchle doručenie a férové ceny.</p>
+    <div class="hero-actions">
+      <a class="btn" href="katalog.html">Prezrieť produkty</a>
+      <a class="btn btn-outline" href="registracia.html">Vytvoriť účet</a>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+    <div class="hero-icon">🛍️</div>
+  </div>
+</section>
+<section class="benefits">
+  <div class="benefit"><div class="ic">🚚</div><div><strong>Rýchle doručenie</strong><small>do 2 pracovných dní</small></div></div>
+  <div class="benefit"><div class="ic">🔒</div><div><strong>Bezpečná platba</strong><small>kartou alebo na dobierku</small></div></div>
+  <div class="benefit"><div class="ic">↩️</div><div><strong>Vrátenie tovaru</strong><small>do 14 dní</small></div></div>
+  <div class="benefit"><div class="ic">💬</div><div><strong>Podpora</strong><small>každý pracovný deň</small></div></div>
+</section>
+<section>
+  <h2>Kategórie</h2>
+  <div class="grid cat-grid">
+    <a class="cat" href="katalog.html?kat=1"><span class="ic">📦</span>Kategória 1</a>
+    <a class="cat" href="katalog.html?kat=2"><span class="ic">🎧</span>Kategória 2</a>
+    <a class="cat" href="katalog.html?kat=3"><span class="ic">👕</span>Kategória 3</a>
+    <a class="cat" href="katalog.html?kat=4"><span class="ic">🏠</span>Kategória 4</a>
+  </div>
+</section>
+<section>
+  <h2>Odporúčané produkty</h2>
+  <!-- TU PRIDÁVAJ PRODUKTY: skopíruj blok <article class="card"> -->
+  <div class="grid product-grid">
+<article class="card">
+  <a href="produkt.html"><div class="img"><!-- <img src="img/produkt.jpg" alt="Názov produktu"> -->Obrázok</div></a>
+  <div class="body">
+    <h3><a href="produkt.html">Názov produktu</a></h3>
+    <span class="price">0,00 €</span>
+    <span class="stock">Skladom</span>
+    <a class="btn" href="kosik.html">Do košíka</a>
+  </div>
+</article>
+<article class="card">
+  <a href="produkt.html"><div class="img"><!-- <img src="img/produkt.jpg" alt="Názov produktu"> -->Obrázok</div></a>
+  <div class="body">
+    <h3><a href="produkt.html">Názov produktu</a></h3>
+    <span class="price">0,00 €</span>
+    <span class="stock">Skladom</span>
+    <a class="btn" href="kosik.html">Do košíka</a>
+  </div>
+</article>
+<article class="card">
+  <a href="produkt.html"><div class="img"><!-- <img src="img/produkt.jpg" alt="Názov produktu"> -->Obrázok</div></a>
+  <div class="body">
+    <h3><a href="produkt.html">Názov produktu</a></h3>
+    <span class="price">0,00 €</span>
+    <span class="stock">Skladom</span>
+    <a class="btn" href="kosik.html">Do košíka</a>
+  </div>
+</article>
+<article class="card">
+  <a href="produkt.html"><div class="img"><!-- <img src="img/produkt.jpg" alt="Názov produktu"> -->Obrázok</div></a>
+  <div class="body">
+    <h3><a href="produkt.html">Názov produktu</a></h3>
+    <span class="price">0,00 €</span>
+    <span class="stock">Skladom</span>
+    <a class="btn" href="kosik.html">Do košíka</a>
+  </div>
+</article>
+</div></section>
+</div></main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div><h3>MojShop</h3><p>Krátky popis obchodu.</p></div>
+    <div><h3>Nákup</h3><ul><li><a href="katalog.html">Produkty</a></li><li><a href="kosik.html">Košík</a></li></ul></div>
+    <div><h3>Zákazník</h3><ul><li><a href="prihlasenie.html">Prihlásenie</a></li><li><a href="registracia.html">Registrácia</a></li><li><a href="ucet.html">Môj účet</a></li></ul></div>
+    <div><h3>Kontakt</h3><p>info@mojshop.sk<br>+421 000 000 000</p></div>
+  </div>
+  <p class="copy">© 2026 MojShop</p>
+</div></footer>
+<script src="script.js" defer></script>
+</body></html>
