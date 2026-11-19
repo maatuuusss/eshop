@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Môj účet | MojShop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo">MojShop</a>
+    <form class="search" action="katalog.html" role="search">
+      <input type="search" name="q" placeholder="Hľadať produkty…" aria-label="Hľadať">
+      <button class="btn" type="submit">Hľadať</button>
+    </form>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.querySelectorAll('.nav-links,.main-nav').forEach(e=>e.classList.toggle('open'))">☰</button>
+    <nav class="nav-links">
+      <div class="lang"><select aria-label="Jazyk"><option>SK</option><option>EN</option></select></div>
+      <a href="prihlasenie.html">Prihlásiť</a>
+      <a href="ucet.html">Účet</a>
+      <a href="kosik.html">Košík (0)</a>
+    </nav>
+  </div>
+  <nav class="main-nav"><div class="container"><ul>
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="katalog.html">Všetky produkty</a></li>
+    <li><a href="katalog.html?kat=1">Kategória 1</a></li>
+    <li><a href="katalog.html?kat=2">Kategória 2</a></li>
+    <li><a href="katalog.html?kat=3">Kategória 3</a></li>
+  </ul></div></nav>
+</header>
+<main><div class="container">
+<h1>Môj účet</h1>
+<div class="dashboard">
+  <nav class="sidebar"><a class="active" href="#">História objednávok</a><a href="#">Osobné údaje</a><a href="#">Zmena hesla</a><a href="#">Odhlásiť</a></nav>
+  <div>
+    <h2>História objednávok</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Č. objednávky</th><th>Dátum</th><th>Stav</th><th>Suma</th></tr></thead>
+      <tbody><tr><td>#0001</td><td>01.01.2026</td><td>Odoslaná</td><td>0,00 €</td></tr></tbody>
+    </table></div>
+  </div>
+</div>
+</div></main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div><h3>MojShop</h3><p>Krátky popis obchodu.</p></div>
+    <div><h3>Nákup</h3><ul><li><a href="katalog.html">Produkty</a></li><li><a href="kosik.html">Košík</a></li></ul></div>
+    <div><h3>Zákazník</h3><ul><li><a href="prihlasenie.html">Prihlásenie</a></li><li><a href="registracia.html">Registrácia</a></li><li><a href="ucet.html">Môj účet</a></li></ul></div>
+    <div><h3>Kontakt</h3><p>info@mojshop.sk<br>+421 000 000 000</p></div>
+  </div>
+  <p class="copy">© 2026 MojShop</p>
+</div></footer>
+</body></html>
